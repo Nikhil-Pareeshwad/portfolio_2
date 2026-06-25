@@ -15,16 +15,28 @@ function App() {
 
   const projects = [
     {
+      title: "Attendance Management System",
+      description:
+        "A full-stack MERN application for managing daily student attendance. Built using React, Node.js, Express.js, MongoDB, HTML, and CSS. Features attendance tracking, attendance records management, and a responsive user interface.",
+      link: "https://attendance-system-kec-frontend.onrender.com/",
+    },
+    {
       title: "Portfolio Website",
-      description: "Personal portfolio built using React and Vite.",
+      description:
+        "Personal portfolio built using React and Vite showcasing skills and projects.",
+      link: "#",
     },
     {
       title: "MERN Blog App",
-      description: "Full-stack blog application with authentication.",
+      description:
+        "Full-stack blog application with authentication and CRUD functionality.",
+      link: "#",
     },
     {
       title: "Task Manager",
-      description: "CRUD task management application using MERN stack.",
+      description:
+        "CRUD task management application using the MERN stack.",
+      link: "#",
     },
   ];
 
@@ -33,15 +45,13 @@ function App() {
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-content">
-          <h1>
-            Hi, I'm <span>Nikhil</span>
-          </h1>
+          <h1>Hi, I'm Nikhil</h1>
 
           <h2>Full Stack MERN Developer</h2>
 
           <p>
             I build responsive web applications using React, Node.js,
-            Express, and MongoDB.
+            Express.js, and MongoDB.
           </p>
 
           <a href="#contact" className="btn">
@@ -86,7 +96,14 @@ function App() {
 
               <p>{project.description}</p>
 
-              <button className="btn">View Project</button>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                View Project
+              </a>
             </div>
           ))}
         </div>
@@ -102,7 +119,7 @@ function App() {
 
           <div className="socials">
             <a
-              href="https://github.com/"
+              href="https://github.com/Nikhil-Pareeshwad"
               target="_blank"
               rel="noreferrer"
             >
